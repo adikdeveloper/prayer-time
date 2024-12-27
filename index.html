@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namoz Vaqtlari</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Namoz Vaqtlari</h1>
+      <div class="location-controls">
+        <select class="location-select" id="citySelect">
+          <option value="tashkent">Toshkent</option>
+          <option value="samarkand">Samarqand</option>
+          <option value="bukhara">Buxoro</option>
+          <option value="andijan">Andijon</option>
+          <option value="namangan">Namangan</option>
+          <option value="custom">Mening Joyim</option>
+        </select>
+        <button class="geo-button" id="geoButton" title="Joriy joylashuvni aniqlash">📍</button>
+      </div>
+      <div class="location-display" id="locationDisplay"></div>
+    </div>
+    <div class="loading" id="loading">Joylashuv aniqlanmoqda...</div>
+    <div class="current-time" id="currentTime"></div>
+    <div class="next-prayer">
+      <h2>Keyingi namoz</h2>
+      <div id="nextPrayer"></div>
+      <div class="countdown" id="countdown"></div>
+    </div>
+    <div class="prayer-times" id="prayerTimes"></div>
+    <div class="disclaimer"
+      style="background: #fff3cd; color: #856404; padding: 10px; text-align: center; font-size: 0.9em;">
+      Namoz vaqtlari API.aladhan.com dan olingan. Asl vaqtdan 5-15 daqiqa farq qilishi mumkin. Ehtiyot chorasi sifatida
+      namozni biroz oldinroq o'qishni tavsiya qilamiz. Namoz vaqtlarini ko'rgan paytingiz iltimos vpn dan foydalanmang!
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
